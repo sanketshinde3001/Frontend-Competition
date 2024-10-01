@@ -8,22 +8,26 @@
 </head>
 <body>
     <!-- Header Section -->
-    <header>
-        <h2 class="title">TECHKNIGHTS ASSOCIATION</h1>
-        <h3 class="subtitle">PRESENTS</h3>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="#">REGISTER</a></li>
-            </ul>
-        </nav>
-    </header>
+     <div id="fixedhead">
+        <header class="header">
+            <h1 class="title">TECHKNIGHTS ASSOCIATION</h1>
+            <h3 class="subtitle">PRESENTS</h3>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about-link">ABOUT US</a></li>
+                    <li><a href="#event-link">EVENT</a></li>
+                    <li><a href="#form-div">REGISTER</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="blur">
+        </div>
+     </div>
+
 
     <!-- Main Content Section -->
-    <section class="about-section">
-        <hr>
-        <h2>ABOUT US</h2>
+    <section class="about-section" id="about-link">
+        <h2 id="aboutus">ABOUT US</h2>
         <p>Department Of Computer Science And Business Systems<br>
         Presenting International Level Symposium On 5th October,2024<br>
         "Towen Gen3"</p>
@@ -37,12 +41,14 @@
         <!-- Icons and Date Section -->
         <div class="icons-section">
             <div class="social-icons">
-                <img src="instagram.png" alt="Instagram">
-                <img src="facebook.png" alt="Facebook">
-                <img src="youtube.png" alt="YouTube">
+                <img class="insta" src="instagram.png" alt="Instagram">
+                <img class="facebook" src="facebook.png" alt="Facebook">
+                <img class="youtube" src="youtube.png" alt="YouTube">
             </div>
-            <div class="event-info">
-                <p>📅 05/10/2024</p>
+            <div class="event-info1">
+                <div class="event-date">
+                <img src="calender.svg" alt="calender" style="height: 25px;" srcset=""><p style="font-size: 20px;"></p> 05/10/2024</p>
+                </div>
                  <div class="time">
                     <img src="clock.png" alt="Clock">
                      9:00am-4:00pm
@@ -52,12 +58,99 @@
 
 
     </section>
-   <div class="event-info">
+   <div class="event-info2"  id="event-link">
     <h1>FRONTEND MENTOR</h1>
         <h2>Unlock And Elevate Your Frontend Skills </h2>
     <div class="circle">
         <p>"Frontend Mentor Is An Exciting Event <br> For Developers,<br> Where They Need To Code <br> A Given Web Design Page <br> Using Html, Css, And Javascript."</p>
     </div>
    </div>
+   <hr>
+   <div id="form-div">
+    <div class="outer-container">
+        <div class="form-container">
+          <h1>REGISTER HERE:</h1>
+          <a href="#" id="form" class="form-link">FILL THIS FORM</a>
+          <form action="#form-div" class="registration-form">
+            <label for="name">NAME</label>
+            <input type="text" id="name" />
+    
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" />
+    
+            <label for="contact">CONTACT NUMBER</label>
+            <input type="tel" id="contact" />
+    
+            <label for="college">COLLEGE</label>
+            <input type="text" id="college" />
+    
+            <label for="dept">DEPT</label>
+            <input type="text" id="dept" />
+    
+            <label for="year">YEAR</label>
+            <div class="radio-container">
+              <div class="radio-div">
+                <input type="radio" id="1st" name="year" value="1st" />
+                <label class="radio-label" for="1st">1st</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" id="2nd" name="year" value="2nd" />
+                <label class="radio-label">2nd</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" id="3rd" name="year" value="3rd" />
+                <label class="radio-label">3rd</label>
+              </div>
+              <div class="radio-div">
+                <input type="radio" id="4th" name="year" value="4th" />
+                <label class="radio-label">4th</label>
+              </div>
+            </div>
+    
+            <label for="gender">GENDER</label>
+            <div class="radio-container">
+              <div class="radio-div">
+                  <input type="radio" name="gender" value="male" />
+                  <label class="radio-label">Male</label>
+              </div>
+              <div class="radio-div">
+                  <input type="radio" name="gender" value="female" />
+                  <label class="radio-label">Female</label>
+              </div>
+          </div>
+          
+    
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" placeholder="Dd-Mm-Yyyy" />
+    
+            <label for="skills">SKILLS</label>
+            <div class="checkbox-group">
+              <div class="checkbox-div">
+                  <input type="checkbox" id="html" name="skills" value="HTML" />
+                  <label for="html" class="checkbox-label">HTML</label>
+              </div>
+              <div class="checkbox-div">
+                  <input type="checkbox" id="css" name="skills" value="CSS" />
+                  <label for="css" class="checkbox-label">CSS</label>
+              </div>
+              <div class="checkbox-div">
+    
+                  <input type="checkbox" id="js" name="skills" value="JavaScript" />
+                  <label for="js" class="checkbox-label">JavaScript</label>
+              </div>
+    
+    
+            </div>
+    
+            <label for="why">WHY JOINING THIS EVENT?</label>
+            <textarea id="why" placeholder="Reason For joining This Event" rows="5"></textarea>
+    
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+   </div>
+
+
 </body>
 </html>
