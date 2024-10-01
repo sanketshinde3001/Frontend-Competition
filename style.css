@@ -1,0 +1,21 @@
+*{
+    margin : 0;
+    padding: 0;
+    box-sizing : border-box;
+    width:100%;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+.container{
+    width:100%;
+
+    color:#009999;
+    flex: content;
+    justify-content: center;
+    align-items: center;
+}
